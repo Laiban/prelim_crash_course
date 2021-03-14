@@ -1,0 +1,846 @@
+\documentclass[]{article}
+\usepackage{geometry}
+\usepackage[english]{babel}
+\usepackage[autostyle, english = american]{csquotes}
+\MakeOuterQuote{"}
+\geometry{legalpaper, portrait, margin=1in}
+\usepackage{color}   %May be necessary if you want to color links
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true, 
+    linktoc=all,     %set to all if you want both sections and subsections linked
+    linkcolor=blue,
+}
+\usepackage{amsmath,amsfonts,amssymb,amsthm} 
+\usepackage{braket,physics,unicode-math}
+%%%%%%%%%%%%%% NEW COMMANDS FOR SHORTHAND MATH %%%%%%%%%%%%%%
+% complicated 1
+\newcommand{\oneQM}{$1\hspace{-0.21em}\text l$}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%opening
+\title{UIdaho Physics Prelim Crash Course}
+\author{Michael Heslar and contributing authors}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This crash course is meant to provide a concise overview of the necessary concepts to reasonably attempt every problem on the Prelim Exam. Each section should only include necessary equations (no derivations and such) to explain the concept with proper context. 
+\end{abstract}
+
+\tableofcontents
+\pagebreak
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Schedule}
+\begin{center}
+    \begin{tabular}{c|c|c|c|c|c}
+        \hline
+        Week of & Michael & Rabindra & Isiaka & Alex & Kaleb \\
+        \hline
+        \hline
+        Feb 22 & QM 1 & QM 1 & Math Meth & Math Meth & Math Meth \\
+        \hline
+        Mar 1 & QM 1 & QM 1 & Math Meth & Math Meth & Math Meth \\
+        \hline
+        Mar 8 & QM 2 & QM 2 & Stat Mech & Stat Mech & Stat Mech \\
+        \hline
+        Mar 15 & QM 2 & QM 2 & Stat Mech & Stat Mech & Stat Mech \\
+        \hline
+        Mar 22 & EM 1 & EM 1 & QM 1 & QM 1 & QM 1 \\
+        \hline
+        Mar 29 & EM 1 & EM 1 & QM 1 & QM 1 & QM 1 \\
+        \hline
+        Apr 5 & EM 2 & EM 2 & QM 2 & QM 2 & QM 2 \\
+        \hline
+        Apr 12 & EM 2 & EM 2 & QM 2 & QM 2 & QM 2 \\
+        \hline
+        Apr 19 & Adv Mech & Adv Mech & EM 1 & EM 1 & EM 1 \\
+        \hline
+        Apr 26 & Adv Mech & Adv Mech & EM 1 & EM 1 & EM 1 \\
+        \hline
+        May 3 & Math Meth & Math Meth & EM2 & EM2 & EM2 \\
+        \hline
+        May 10 & Math Meth & Math Meth & EM2 & EM2 & EM2 \\
+        \hline
+        May 17 & Stat Mech & Stat Mech & Adv Mech & Adv Mech & Adv Mech \\
+        \hline
+        May 24 & Stat Mech & Stat Mech & Adv Mech & Adv Mech & Adv Mech \\
+        \hline
+        May 31 & 2003 \& 2004 & 2003 \& 2004 & 2003 \& 2004 & 2003 \& 2004 & 2003 \& 2004 \\
+        \hline
+        June 7 & 2005 \& 2009 & 2005 \& 2009 & 2005 \& 2009 & 2005 \& 2009 & 2005 \& 2009 \\
+        \hline
+        June 14 & 2010 \& 2011 & 2011 \& 2011 & 2012 \& 2011 & 2013 \& 2011 & 2014 \& 2011 \\
+        \hline
+        June 21 & 2012 \& 2013 & 2013 \& 2013 & 2014 \& 2013 & 2015 \& 2013 & 2016 \& 2013 \\
+        \hline
+        June 28 & Win 2015 & Win 2016 & Win 2017 & Win 2018 & Win 2019 \\
+        \hline
+        July 5 & Sum 2015 & Sum 2016 & Sum 2017 & Sum 2018 & Sum 2019 \\
+        \hline
+        July 12 & 2016 test & 2017 test & 2018 test & 2019 test & 2020 test \\
+        \hline
+        July 19 & 2017 test & 2018 test & 2019 test & 2020 test & 2021 test \\
+        \hline
+        July 26 & 2018 test & 2019 test & 2020 test & 2021 test & 2022 test \\
+        \hline
+        Aug 2 & 2019 test & 2020 test & 2021 test & 2022 test & 2023 test \\
+        \hline
+    \end{tabular}
+\end{center}
+\section{Mechanics}
+\subsection{Basic Principles}
+\begin{equation}
+    \Sigma \vec{F} = m \vec{a}
+\end{equation}
+$\Sigma \vec{F} = $ summation of forces/net force.
+   $ m = $ mass.
+    $\vec{a} = $ acceleration. Also includes specific tid-bits such as conditions that the formula applies to, things to look out for or other important caveats.
+\subsubsection{Newtonian dynamics for one or multiple particles}
+\subsubsection{Central Forces}
+
+\subsection{Non-inertial Coordinate Systems}
+\subsubsection{Translating and rotating systems}
+\subsubsection{Newton's Law in accelerated coordinate system}
+Example with motion on the surface of rotating earth 
+\subsection{Lagrangian Dynamics}
+\subsubsection{Generalized coordinates}
+\subsubsection{D'Alembert's principle}
+\subsubsection{Lagrange equations}
+\subsubsection{Forces of constraint and Lagrange multipliers}
+\subsubsection{Geodesics?}
+
+\subsection{Small Oscillations}
+\subsubsection{Normal mode frequencies and eigenvectors}
+\subsubsection{Normal coordinates}
+\subsubsection{Coupled systems}
+
+\subsection{Rigid rotators}
+\subsubsection{Inertia tensor and principal axes}
+\subsubsection{Euler's equations and angles}
+
+\subsection{Hamiltonian Dynamics}
+\subsubsection{Hamilton's equations}
+\subsubsection{Canonical transformations}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Undergrad Quantum Mechanics}
+\subsection{Review of Quantum Systems: Q.H.O. and Hydrogen Atom}
+\subsubsection{Quantum Harmonic Oscillator (QHO)}
+include discussion on discrete hbar*w/2 energy levels...
+\subsubsection{Hydrogen Atom}
+
+\subsection{3D Time-dependent Schrodinger's Equation (SE)}
+\subsubsection{Part 1: Azimuthal Equation}
+\subsubsection{Part 2: Time-independent SE}
+
+\subsection{Time-independent SE in more detail}
+\subsubsection{Case 1a: Infinite Potential Well with zero potential V=0} 
+\subsubsection{Case 1b: Infinite Potential Well with Constant Potential $V_{o}$}
+\subsubsection{Case 1c: Infinite Potential Well with Variable Potential $V_{o}$}
+simiilar to 2020 quantum problem\\
+hydrogen atom as example of spherical SE with electric/magnetic potential??
+\subsubsection{Case 2: Finite Potential Well}
+General approach of how to find wavefuncs in each region with BCs of W1 = W2 and W2 = W3 and their derivatives equate
+
+\subsection{Reflection and Transmission Coefficients}
+.....watch van biezen's video
+
+\subsection{How to find expectation values}
+\subsubsection{Position}
+\subsubsection{Momentum}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagebreak
+\section{Graduate Quantum Mechanics}
+\subsection{Overview of Dirac Notation and Operators}
+\subsubsection{Dirac Notation}
+First, we have the 1st postulate of QM that states \textit{"the physical state of a quantum system is represented by a vector in Hilbert space"}. Examples can include:
+\begin{enumerate}
+    \item $\psi(\vec{r},t)$ = relates to the probability of finding a particle at $\vec{r}$ at time $t$, which represents the state/condition of the system
+    \item We can have two states for the spin of a particle:\\
+    $\ket{\uparrow} = \mqty(1 \\ 0)$ , $\ket{\downarrow} = \mqty(0 \\ 1)$
+\end{enumerate}
+An easier representation of math in QM makes use of "bra-ket" notation to represent the states of a physical variable of a particle (e.g. spin, momentum).
+The structure of bra, ket, and brakets can be shown as vectors and functions alike:
+\begin{enumerate}
+    \item \textbf{ket, $\ket{\psi}$,} as a vector and a function respectively: $\ket{\psi} = \mqty(1 \\ 0)$ and $\ket{\psi} = f(\vec{r},t)$
+    \item \textbf{bra ,$\bra{\psi}$,} is the complex conjugate of a ket, represented as a vector and a function respectively:\\ \\$\bra{\psi} = (\ket{\psi}^*)^T = \mqty(1 & 0)$ and $\bra{\psi} = [f(\vec{r},t)]^*$
+    \item \textbf{braket, $\braket{\psi}{\psi}$,} represents the inner product in Hilbert space
+    \begin{enumerate}
+        \item vector: $\braket{\psi}{\psi} = \mqty(1 & 0) \mqty(1 \\ 0) = 1(1)+0(0) = 1$
+        \item function: $\braket{\psi}{\psi} = f^* (\vec{r},t) f(\vec{r},t) = \left|f(\vec{r},t)\right|^2$
+    \end{enumerate}
+\end{enumerate}
+
+\subsubsection{Properties of Dirac Notation}
+\begin{enumerate}
+    \item Every $\ket{\psi}$ has a $\bra{\psi}$.
+    \item Constant multiple property: $\ket{a\psi} = a\ket{\psi}$ and $\bra{a\psi} = a^*\bra{\psi}$
+    \item Orthogonality: $\braket{\psi}{\phi}=0$ where $\psi$, $\phi$ are orthogonal
+    \item Orthonormality: condition of orthogonality AND $\braket{\psi}{\psi}=\braket{\phi}{\phi}=1$ (similar to unit vectors)
+\end{enumerate}
+
+\subsubsection{Hilbert spaces}
+Properties:
+\begin{enumerate}
+    \item linear vector space
+    \item has \textit{inner product} operation: $\bra{\psi_{1}}\ket{\psi_{2}}$ $\epsilon$ $\mathbb{C}$ (set of complex numbers)
+    \begin{enumerate}
+        \item "complicated one" or identity vector: \oneQM \hspace{0.1em} or $\hat{I}$ or $\mqty(1 & 0 \\ 0 & 1)$%$1\hspace{-0.21em}\text l$
+        \item complex conjugate symmetry: $\bra{\psi_{1}}\ket{\psi_{2}} = \bra{\psi_{2}}\ket{\psi_{1}}^{*}$
+        \item linearity w.r.t. 2nd vector: $\bra{\psi_{1}}\ket{a\psi_{2}+b\psi_{3}} = a\bra{\psi_{1}}\ket{\psi_{2}}+b\bra{\psi_{1}}\ket{\psi_{3}}$
+        \item anti-linearity w.r.t. 1st vector: $\bra{a\psi_{1}+b\psi_{2}}\ket{\psi_{3}} = a^{*}\bra{\psi_{1}}\ket{\psi_{3}}+b^{*}\bra{\psi_{2}}\ket{\psi_{3}}$
+        \item inner product: $\bra{\psi}\ket{\psi} = \left|\psi\right|^{2}\geq0$
+        \item standard distance formula between 2 vectors: $\left|\psi_{2}-\psi_{1}\right| = \sqrt{\bra{\psi_{2}-\psi_{1}}\ket{\psi_{2}-\psi_{1}}}$
+    \end{enumerate}
+    \item are separable (countable, dense) and complete (no gaps) such that \[ \lim_{m,n\to\infty}\left|\psi_{m}-\psi_{n}\right| f(x) = 0 \]
+\end{enumerate}
+
+\subsubsection{Types of Hilbert spaces}
+\begin{enumerate}
+    \item finite-dimensional Hilbert space: $\mathbb{R}^{n}$, $\mathbb{C}^{n}$ for \textit{n} basis vectors
+    \begin{enumerate}
+        \item real inner product on $\mathbb{R}^{n}$ \\ $\vec{x}_1 = \mqty(a_1 \\ a_2 \\ ... \\ a_n)$, $\vec{x}_2 = \mqty(b_1 \\ b_2 \\ ... \\ b_n) \rightarrow \vec{x}_1\vdot\vec{x}_2 = \vec{x}_1^T\vec{x}_2 = a_1 b_1 + a_2 b_2 + \ldots + a_n b_n$
+        \item complex inner product on $\mathbb{C}^{n}$ \\ $\vec{z}_1 = \mqty(a_1+ib_1 \\ a_2+ib_2 \\ ... \\ a_n+ib_n)$, $\vec{z}_2 = \mqty(c_1+id_1 \\ c_2+id_2 \\ ... \\ c_n+id_n) \rightarrow \vec{z}_1\vdot\vec{z}_2 = (\vec{z}_1^*)^T \vec{z}_2 = \mqty(a_1-ib_1 & \ldots) \mqty(c_1+id_1 \\ \ldots)$
+    \end{enumerate}
+
+    \item infinite-dimensional Hilbert space: e.g. vector space of complex-valued functions
+    \begin{enumerate}
+        \item $\braket{\psi}{\phi} = \int_{-\infty}^{\infty} \psi^* \phi \dd x$, need \underline{square-integrable functions} (i.e. $\int_{-\infty}^{\infty}  \left|f(x)\right|^2 \dd x = \textrm{finite}$) \\ \\
+        Example: $\braket{e^x}{e^{2x}} = \int_{-\infty}^{\infty} (e^x)^* e^{2x} \dd x$
+        \item \textbf{Note:} For QM, this condition needs to be \underline{normalized}: $\int_{-\infty}^{\infty}  \left|\psi\right|^2 \dd x \overset{!}{=} 1$
+    \end{enumerate}
+\end{enumerate}
+
+\subsubsection{Operators}
+\begin{enumerate}
+    \item Think of operators as a \underline{transformation} for vectors, such as $\hat{A}\ket{\psi} = \ket{\psi'}$ or $\hat{A}\bra{\phi} = \bra{\phi'}$. 
+    \item They can be represented by matrices, such as:\\
+    $\hat{A} = \mqty[a & b \\ c & d] \rightarrow \hat{A}\ket{\psi} = \mqty[a & b \\ c & d] \mqty[1 \\ 0]$
+    \item In function space, operators DO NOT EQUAL matrices, but rather mathematical operators, such as derivatives (e.g. $\hat{A} = \partialderivative{x}$)
+\end{enumerate}
+
+\subsubsection{Properties of Operators}
+\begin{enumerate}
+    \item $\hat{A}\hat{B} \ne \hat{B}\hat{A} (order matters)$
+    \item $\hat{A}\hat{B}\hat{C} = (\hat{A}\hat{B})\hat{C}$
+    \item $(\hat{A})^n (\hat{A})^m = (\hat{A})^{m+n}$
+    \item $\mel{\phi}{\hat{A}}{\psi}$ $\epsilon$ $\mathbb{C}$ (complex numbers), so apply $\hat{A}$ to $\ket{\psi}$ to obtain $\braket{\phi}{\psi'}$ $\epsilon$ $\mathbb{C}$. Alternatively, this says $\mel{\phi}{\hat{A}}{\psi} = \braket{\phi}{\psi'}$
+    \item Linear operators:
+    \begin{enumerate}
+        \item $\hat{A}(\ket{\psi_1}+\ket{\psi_2}) = \hat{A}\ket{\psi_1}+\hat{A}\ket{\psi_2}$
+        \item $\hat{A}\ket{a\psi} = a\hat{A}\ket{\psi}$, since $a$ is a scalar
+    \end{enumerate}
+    \item "mean" expectation value of operator w.r.t. state $\ket{\psi}$:\\
+    $\ket{\hat{A}} = \frac{\mel{\psi}{\hat{A}}{\psi}}{\braket{\psi}{\psi}}$\\
+    e.g. $\ket{\vec{r}}$ gives mean position of a particle
+    \item Outer product $\ket{\psi}\bra{\phi}$ is a linear \underline{operator}:\\
+    $\ket{\psi}\bra{\phi} = \mqty(1 \\ 0)\mqty(1 & 0) = \mqty(1 & 0 \\ 0 & 0)$
+\end{enumerate}
+
+\subsubsection{QM Operators}
+\begin{enumerate}
+    \item \textbf{Inverse operator:} $\hat{A}\hat{A}^{-1} = \hat{A}^{-1}\hat{A} = \hat{I}$, where $\boxed{\hat{I}\ket{\psi} = \ket{\psi}}$
+    \item \textbf{Hermitian operator} is the conjugate transpose (e.g. scalar $a$, $a^{\dagger} = a^*$). Applying to bras/kets yields:\\
+    $\ket{\psi}^{\dagger} = \bra{\psi}$ and $\bra{\phi}^{\dagger} = \ket{\phi}$
+    
+    They are more complicated for operators:
+    \begin{enumerate}
+        \item $\braket{\phi}{\hat{A}\psi} = \braket{\hat{A}^{\dagger}\phi}{\psi}$ for any $\phi$, $\psi$
+        \item $\mel{\phi}{\hat{A}}{\psi} = \mel{\psi}{\hat{A}^{\dagger}}{\phi}^*$
+    \end{enumerate}
+    An example below:\\
+    $\hat{A} = \mqty(1 & 0 \\ i & 1)$, then $\hat{A}^{\dagger} = \mqty(1 & -i \\ o & 1)$\\
+    We can see the Hermitian operator is defined by 
+    $\boxed{\hat{A} = \hat{A}^{\dagger}}$. Also, the \underline{anti-Hermitian} is $\boxed{\hat{A} = -\hat{A}^{\dagger}}$.
+    \item \textbf{Unitary operators:} $\hat{U}$ is unitary if $(\hat{U})^{\dagger} = \hat{U}^{-1}$\\
+    \underline{Property}: If $\hat{U}$, $\hat{V}$ are unitary, then $\hat{U}\hat{V}$ is also unitary. This is important for transforming Hermitian operators.
+    \item \textbf{Projection Operator:} $\hat{p}$ satisfies $\hat{p} = \hat{p}^{\dagger}$ and $\hat{p} = \hat{p}^2$\\
+    \underline{Properties}
+    \begin{itemize}
+        \item If $\hat{p}_1$ \& $\hat{p}_2$ are projection operators and $\hat{p}_1\hat{p}_2 = \hat{p}_2\hat{p}_1$, then $\hat{p}_1\hat{p}_2$ and $\hat{p}_2\hat{p}_1$ are also projection operators.
+        \item If $\hat{p}_1$ and $\hat{p}_2$ are orthogonal, then $\hat{p}_1\hat{p}_2 = 0$.
+        \item Sum of projection operators ($\hat{p}_1 + \hat{p}_2)$ CAN be projection operators if and only if all $\hat{p}$ are mutually orthogonal.
+    \end{itemize}
+\end{enumerate}
+
+\subsubsection{Commutators}
+\begin{itemize}
+    \item Suppose $\hat{A}$ and $\hat{B}$ are two operators. Their commutator, $\comm{\hat{A}}{\hat{B}}$, is given by:\\
+    $\comm{\hat{A}}{\hat{B}} = \hat{A}\hat{B}-\hat{B}\hat{A}$\\
+    which describes the extent to which $\hat{A}$ and $\hat{B}$ commute (0 means they commute).
+    \item Anti-commutator: $\acomm{\hat{A}}{\hat{B}} = \hat{A}\hat{B}+\hat{B}\hat{A}$, so this describes the extent to which $\hat{A}$ and $\hat{B}$ anti-commute ($\hat{A}\hat{B}=-\hat{B}\hat{A}$).
+\end{itemize}
+
+\underline{Properties}
+\begin{enumerate}
+    \item $\comm{\hat{A}}{\hat{A}} = \hat{A}^2 - \hat{A}^2 = 0$
+    \item Anti-symmetry: $\comm{\hat{A}}{\hat{B}} = -\comm{\hat{B}}{\hat{A}}$
+    \item Linearity: $\comm{\hat{A}}{\hat{B}+\hat{C}+\ldots} = \comm{\hat{A}}{\hat{B}}+\comm{\hat{A}}{\hat{C}}+\ldots$
+    \item Hermitian conjugate: $\comm{\hat{A}}{\hat{B}}^{\dagger} = \comm{\hat{B}^{\dagger}}{\hat{A}^{\dagger}}$\\
+    Note: If $\hat{A}$, $\hat{B}$ are matrices, then $\hat{A}\hat{B}-\hat{B}\hat{A}$ is also a matrix since the commutator is also an operator.
+    \item Distributivity:
+    \begin{itemize}
+        \item $\comm{\hat{A}}{\hat{B}\hat{C}} = \comm{\hat{A}}{\hat{B}}\hat{C} + \hat{B}\comm{\hat{A}}{\hat{C}}$, also works for order $n$ ($\hat{B}^n$)
+        \item $\comm{\hat{A}\hat{B}}{\hat{C}} = \hat{A}\comm{\hat{B}}{\hat{C}} + \comm{\hat{A}}{\hat{C}}\hat{B}$
+    \end{itemize}
+    \item Jacobi identity: $\comm{\hat{A}}{\comm{\hat{B}}{\hat{C}}} + \comm{\hat{B}}{\comm{\hat{C}}{\hat{A}}} + \comm{\hat{C}}{\comm{\hat{A}}{\hat{B}}} = 0$
+    \item Operators commute with scalars: $\comm{\hat{A}}{1} = 0$
+    \item If $\hat{A}$, $\hat{B}$ are \underline{Hermitian}, then $\comm{\hat{A}}{\hat{B}} = \hat{A}\hat{B}-\hat{B}\hat{A}$ is \underline{Anti-Hermitian}.
+\end{enumerate}
+
+
+\subsection{Eigenvalue/Eigenvector Problems}
+Suppose $\hat{A}$ is an operator. The eigenvalue of $\hat{A}$ is $\lambda$, which satisfies the general equation $\hat{A}\ket{\psi} = \lambda\ket{\psi}$, where $\ket{\psi}$ is an eigenvector.\\
+\underline{Properties of the problems}
+\begin{itemize}
+    \item $\oneQM \ket{\psi} = \lambda_{I} \ket{\psi}$, where $\lambda_I = 1$ implies infinitely many eigenvectors and \underline{degeneracy}
+    \item If $\hat{A}\ket{\psi} = \lambda_A \ket{\psi}$, then $f(\hat{A})\ket{\psi} = f(\lambda_A) \ket{\psi}$ in function space
+\end{itemize}
+\underline{Theorems}
+\begin{enumerate}
+    \item Eigenvalues of Hermitian operator and expectation values are real
+    \item Eigenvectors of Hermitian operators corresponding to different $\lambda$'s are \textbf{orthogonal} if $\hat{A}$ is Hermitian such that:\\
+    $\hat{A}\ket{\psi_1} = \lambda\ket{\psi_1}$\\
+    $\hat{A}\ket{\psi_2} = \lambda\ket{\psi_2}$ \textit{, then }\rightarrow $\braket{\psi_1}{\psi_2} = 0$\\
+    $\lambda_1 \ne \lambda_2$
+    \item Eigenvectors of Hermitian operators form complete set of mutually \underline{orthonormal} basis vectors. It's unique if no degeneracy in eignvalues.
+    \item If $\hat{A}$, $\hat{B}$ ae commutable Hermitian operators, they share equal eigenvectors.
+\end{enumerate}
+Now, we arrive to the \textbf{2nd postulate of QM:} \textit{"To every physical observable in Mechanics, there corresponds a linear Hermitian operator in QM"}.\\
+Examples: position $\hat{x} = x$ or momentum $\hat{p_x} = \frac{\hbar}{i}\partialderivative{x}$
+
+
+\subsubsection{Classic Ex 1: Spin 1/2 Particle}
+\textbf{discuss eigenvalue problem process, how to rewrite state in terms of eigenvectors, how to find transformation matrix, and show it's unitary...CONTINUE HERE}\\
+Consider the most classic example of a spin 1/2 state
+\subsubsection{Classic Ex 2: Time-evolved Spin 1/2 State}
+also include how to find prob of time-evolved state using eigenvectors
+\subsubsection{Classic Ex 3: Electron with arbitrary unit vector in $\vec{B}$ field}
+also include how to find prob of time-evolved state using eigenvectors
+
+\subsection{Position and Momentum Operators}
+includes discussion of conversion from position to momentum space...or just list the operators and say to know for shit like expectation values....
+
+\subsection{Schrodinger vs Heisenberg Pictures (Eq. of Motion)}
+\textbf{quite big topic in last half of QM1....} \\
+2 exs in HW7 and one in Exam 2 of qm1 \\
+2 more in HW8
+
+\subsection{Creation, Annihilation, and Number Operators}
+The creation ($a^{\dagger}$) and annihilation ($a$) operators are widely used as ladder operators in the formulation of quantum harmonic oscillators (QHO). They are given by:\\
+$a^{\dagger} = \sqrt{\frac{m\omega}{2\hbar}}(x-\frac{ip}{m\omega})$\\
+$a = \sqrt{\frac{m\omega}{2\hbar}}(x+\frac{ip}{m\omega})$\\
+We can visualize $a$ and $a^\dagger$ in terms of energy levels for a given state $\ket{\psi}$ on a QHO as a ladder increasing to the right:\\
+$\ldots \rightarrow \epsilon-1 \rightarrow \epsilon \rightarrow \epsilon+1 \rightarrow \ldots$, where $\epsilon = \frac{E}{\hbar \omega} = n + \frac{1}{2}$ is the energy state.\\
+$\ldots \rightarrow a\ket{\psi} \rightarrow \ket{\psi} \rightarrow a^{\dagger}\ket{\psi} \rightarrow \ldots$\\ \\
+The commutator relations are given by:
+\begin{enumerate}
+    \item $\comm{a}{a} = \comm{a^{\dagger}}{a^{\dagger}} = 0$
+    \item $\comm{a}{a^{\dagger}} = \comm{a^{\dagger}}{a} = $ \oneQM
+\end{enumerate}
+\subsubsection{Number operator (N)}
+The number operator serves has the observable that counts the number of particles in degenerate quantum systems, which is given by:\\
+$N = a^{\dagger}a = N^{\dagger}$\\
+The commutator relations are given by:
+\begin{enumerate}
+    \item $\comm{N}{a} = \comm{a^{\dagger}a}{a} = -a$
+    \item $\comm{N}{a^{\dagger}} = \comm{a^{\dagger}a}{a^{\dagger}} = a^{\dagger}$
+    \item $\comm{N}{H} = 0$\\
+    N and the Hamiltonian $H$ commute such that the SE becomes:\\
+    $H\ket{\psi} = \epsilon \ket{\psi} \rightarrow N\ket{\psi} = \lambda\ket{\psi} \ket{\psi}$, where $\lambda$ is an eigenvalue.
+\end{enumerate}
+\subsubsection{Application of operators in Dirac notation}\\
+\textbf{Note: you don't need to remember these expressions; they are given in the formula sheet.} 
+\begin{itemize}
+    \item $a\ket{n} = \sqrt{n}\ket{n-1} \rightarrow \ket{n-1} = \frac{a\ket{n}}{\sqrt{n}}$, where $n$ is the number of the quantum state (n = 0,1,...)
+    \item $a^{\dagger}\ket{n} = \sqrt{n+1}\ket{n+1} \rightarrow \ket{n+1} = \frac{a^{\dagger}\ket{n}}{\sqrt{n+1}}$
+    \item $\ket{n} = \frac{(a^{\dagger})^n}{\sqrt{n}!}\ket{0}$
+\end{itemize}
+We can also represent the position and momentum operators in terms of $a^{\dagger}$ and $a$:
+\begin{itemize}
+    \item $x = \sqrt{\frac{\hbar}{2m\omega}}(a + a^{\dagger}$
+    \item $p = \sqrt{\frac{m\hbar\omega}{2}}(a^{\dagger - a}$
+\end{itemize}
+
+
+
+
+\subsubsection{Classic Ex 1: Finding Wavefunctions of QHO}
+know N=a*adagger with commutator when solving Heisenbergs EOM
+
+\subsection{Rotation in QM: Euclidean SO(3) vs Dirac SU(2) groups}
+includes the difference b/t rotation operators in SO(3) as R and SU(2) as $U^\dagger\sigma$U, which is different for each axis obviusly....
+\subsection{Tensor Operators}
+Look thru QM2 notes to reorganize these sections
+\subsection{Perturbation Theory}
+\begin{enumerate}
+	\item Time-independent, Non-degenerate 
+	\item Time-independent, Degenerate
+	\item Time-dependent
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Electromagnetic Theory}
+\subsection{EM1: Introduction to simplified Maxwell's and the Continuity Equations}
+
+\subsection{Two types of Electrostatic Problems}
+\subsubsection{Superposition Problems}
+\subsubsection{Boundary Value Problems}
+
+\subsection{Green's Reciprocity Relation for Interaction Energy}
+
+\subsection{Multipole Expansions}
+\subsubsection{Dipole Moments}
+\subsubsection{Expansions using Spherical Harmonics}
+
+\subsection{Conductors}
+\subsubsection{Reciprocity Relationship}
+\subsubsection{Forces and Energy}
+
+\subsection{Dielectrics}
+\subsubsection{Forces and Energy}
+
+\subsection{Laplace's Equation}
+\subsubsection{Cartesian: Separation of Variables}
+\subsubsection{Polar}
+\subsubsection{Spherical}
+
+\subsection{Poisson's Equation: Method of Images}
+
+\subsection{Poisson's Equation: Green's Functions}
+\subsubsection{Green's Functions as Eigenfunction expansions}
+
+\subsection{Steady Currents}
+
+\subsection{Magnetostatics}
+\subsubsection{Biot-Savart Law}
+\subsubsection{Magnetostatic Scalar Potential}
+\subsubsection{Moment Expansion}
+\subsubsection{Forces and Energy}
+
+\subsection{Transition to EM2: Full-on Maxwell's Equations}
+
+\subsection{Quasi-Electrostatic Systems}
+
+\subsection{Quasi-Magnetostatic Systems}
+
+\subsection{"Approximately" Quasi-systems}
+
+\subsection{Pontyng's Theorem: Energy in Electrodynamics}
+
+\subsection{EM Waves in Free Space}
+
+\subsection{EM Waves in Linear Media}
+
+\subsection{Fresnel's Equations: Field Amplitudes and Power}
+
+\subsection{Models of Dispersive Matter (polarizable?)}
+\subsubsection{Drude for Conductors}
+\subsubsection{Lorentz for Dielectrics}
+
+\subsection{Phase, Group, Energy Velocities}
+
+\subsection{Casuality and Kramers-Kronig Relations}
+
+\subsection{Waves in Coaxial Cables}
+\subsubsection{TE waves}
+\subsubsection{TM waves}
+\subsubsection{TEM waves}
+\subsubsection{Ohmic Losses in Pipes/Cavities}
+
+\subsection{Wave Equations with time-variable charges and currents}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagebreak
+\section{Statistical Mechanics}
+I couldnt find my syllabus, so someone else checking this outline with theirs would be appreciated.
+
+Marty's syllabus of F2019 gave the following chapters/sections from the textbook were the focus: 1-5, 6.2, 6.3, 7.1-7.3, 8.1, 8.3, 10.1-10.3, 12.2, 12.7, 14.1, 14.2, and 16.
+
+
+\subsection{Thermal Physics Review}
+\subsubsection{Microstates vs macrostates, Stirling's approximation, entropy}
+\begin{itemize}
+    \item \emph{Microstate} - defines the state of the system in terms of the current behaviour of all the constituent atoms
+    \item \emph{Macrostate} - Defines the current disposition of a system in terms of macroscopic variables ( measurable quantities used to describe the gross state of a system).
+    \item \emph{Stirling's approximation} - An approximate formula for $\ln{n}!= (n+\frac{1}{2})\ln{n}-n+\frac{1}{2}\ln({2\pi})\approx -n+ n\ln{n}$
+    \item \emph{Entropy}, $S = k_b \ln \Omega$. Where $\Omega$	=	number of microscopic configurations
+    \item \emph{Intensive properties} - Adding two systems together will \emph{not} change the property, e.g. temperature, pressure, chemical potential. 
+    \item \emph{Extensive properties} - Adding two systems together \emph{will} change the property, e.g. mass, volume, number of particles. 
+\end{itemize}
+
+Pressure (Pathria, 1.3.11)
+\begin{equation}
+    P = -\bigg(\partialderivative{E}{V}\bigg)_{N,S}
+\end{equation}
+
+Chemical potential (Pathria, 1.3.12)
+\begin{equation}
+    \mu = \bigg(\partialderivative{E}{N}\bigg)_{V,S}
+\end{equation}
+
+Temperature (Pathria, 1.3.13)
+\begin{equation}
+    T = \bigg(\partialderivative{E}{S}\bigg)_{N,V}
+\end{equation}
+
+Helmholtz Free Energy (Pathria, 1.3.14)
+\begin{equation}
+    A = E - TS
+\end{equation}
+
+Gibbs Free Energy (Pathria, 1.3.15)
+\begin{equation}
+\begin{split}
+    G & = A + PV \\
+      & = E - TS + PV \\
+      & = \mu N
+\end{split}
+\end{equation}
+
+Enthalpy (Pathria, 1.3.16)
+\begin{equation}
+    H &= E + PV \\
+      &= G + TS
+\end{equation}
+
+Specific Heats (Pathria, 1.3.17, 1.3.18)
+\begin{equation}
+\begin{split}
+    c_v &= \bigg(\partialderivative{E}{T}\bigg)_{N,V} \\
+    c_p &= \bigg(\partialderivative{E + PV}{T}\bigg)_{N,P} \\
+        &= \bigg(\partialderivative{H}{T}\bigg)_{N,P}
+\end{split}
+\end{equation}
+
+
+\subsubsection{Liouville's Theorem}
+\begin{equation}
+    \frac{d\rho}{dt} = \frac{\partial\rho}{\partial t} + \big[ \rho, H\big] = 0
+\end{equation}
+
+Applies to systems that obey Hamilton's equations of motion.
+
+For a system in equilibrium, i.e., for \emph{equilibrium ensembles}, also called \emph{stationary ensembles}, 
+$\partialderivative{\rho}{t} = 0$
+and so 
+$\big[\rho,H\big] = 0$
+
+\subsection{Ergodic Hypothesis}
+Assuming that the average of small number of particles over a long time is the same as averaging over a large number of particle for a short time.Then, $ <X>=\lim_{\tau\to\infty}  \frac{1}{\tau}\int_{0}^{\tau}\,X(t)dt$ 
+
+\subsubsection{Microcanonical Ensemble}
+This is called a \textbf{\textit{NVE}} emsemble. Each of these three quantities is a constant of the ensemble. The following quantities can be defined for this ensemble
+
+\begin{itemize}
+    \item The Boltzmann entropy, $S_B= k_B\log(W)$. $W$ is the number of microstates.
+    \item  Microcanonical pressure, P: $\frac{P}{T}=\frac{\delta S}{\delta V}$
+     \item  Microcanonical chemical potential, $\mu$ $\frac{\mu}{T}=-\frac{\delta S}{\delta N}$
+\end{itemize}  
+
+
+
+\subsubsection{Canonical Ensemble}
+A statistical ensemble that represents the possible states of a mechanical system in thermal equilibrium with a heat bath at a fixed temperature.It is also called \textbf{\textit{NVT}} emsemble.
+\begin{itemize}
+    \item Canonical emsemble probability $P$, $P= e^{\frac{F-E}{KT}}$. $F-$Helmholtz free energy
+      \item  Canonical Partition function $Z$: $Z= e^{\frac{-F}{KT}}$.
+    \item  Probability $P$ in terms of  canonical partition function: $P= \frac{1}{Z}e^{\frac{-E}{KT}}$.
+    
+\end{itemize}  
+
+\subsubsection{Grand Canonical Ensemble}
+Also known as the macrocanonical ensemble. It is the statistical ensemble that is used to represent the possible states of a mechanical system of particles that are in thermodynamic equilibrium (thermal and chemical) with a reservoir. The thermodynamic variables of this emsemble are chemical potential $(\mu)$, absolute temperature, $T$, and volume $V$. This emsemble is sometimes called \textbf{\textit{$\mu$VT}}
+
+
+\begin{itemize}
+    \item Assigned probability of each microstates $P$, $P= e^{\frac{(\Omega )}{KT}}$, $\Omega-$Grand potential of the emsemble.
+      \item  Grand Partition function $Z$: $Z= e^{\frac{-\Omega }{KT}}$.
+    \item The Probability $P$ in terms of  Grand Partition function: $P= \frac{1}{Z}e^{\frac{(\mu N-E)}{KT}}$.
+    
+\end{itemize}
+
+\subsection{Partition Function}
+
+
+\subsubsection{Distinguishable vs Indistinguishable particles}
+
+\subsection{Thermodynamic Functions in terms of the Boltzmann Function (Z)}
+
+\subsection{Comparison of Maxwell-Boltzmann, Bose-Einstein, Fermi-Dirac distributions (table)}
+
+\subsection{Phase transitions}
+\subsubsection{Coexistence curve}
+\subsubsection{Critical point for an Equation of State}
+
+\subsection{Equipartition theorem}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagebreak
+\section{Math Methods}
+\subsection{Linear Vector Spaces}
+
+An $n$-dimensional (or $\infty$-dimensional) vector with $\Bbb{C}$-components is represented with the notation: 
+
+\[ \ket{a} = \left(\begin{matrix} a_1 \\ \vdots \\ a_n \end{matrix}\right) = \begin{pmatrix} a_1 & \ldots & a_n \end{pmatrix}^T. \]
+
+For a set of vectors $\{ \ket{a},\ket{b},...\} $ in $V^n$ and set of scalars $\{ \alpha, \beta, ... \}$ in $\Bbb{C}$, a linear vector space is defined to have the following properties:
+
+\begin{enumerate}
+    \item $\ket{a}+\ket{b} = \ket{b}+\ket{a}$ (additive commutativity).
+    \item $\ket{a}+(\ket{b}+\ket{c})=(\ket{a}+\ket{b})+\ket{c}$ (additive associativity).
+    \item $\ket{0}$ exists such that $\ket{0} + \ket{a} = \ket{a} + \ket{0} = \ket{a}$ (additive identity element).
+    \item $\ket{-a}$ exists such that $\ket{a}+\ket{-a}=\ket{0}$ (additive inverse element).
+    \item $\alpha \ket{a}$ is in $V^n$ (closure under scalar multiplicitive).
+    \item $\alpha (\beta \ket{a}) = (\alpha \beta) \ket{a}$ (scalar multiplicitive associativity)
+    \item $1 \ket{a} = \ket{a}$ (scalar multiplicitive identity element).
+    \item $\alpha (\ket{a}+\ket{b})=\alpha \ket{a}+\alpha \ket{b}$ (additive scalar distributivity).
+    \item $(\alpha + \beta)\ket{a}= \alpha \ket{a}+\beta \ket{a}$ (additive vector distributivity).
+    
+\end{enumerate}
+
+
+
+\subsubsection{Linear Combination of Vectors}
+
+A vector $\ket{a}$ is a linear combination of the set of $n$ vectors $\{ \ket{x_1}, \ket{x_2},...,\ket{x_n}\}$ if $\ket{a}$ can be written in the form:
+
+\[c_1\ket{x_1}+c_2\ket{x_2}+...+c_n\ket{x_n}=\ket{a}\]
+
+\noindent for some set of complex scalars $\{c_1,c_2,...,c_n\}$.
+
+\subsubsection{Linear Independence of Vectors}
+Consider a set of $N$ vectors in some vector space $V^N$. The set of vectors, $\{|a_i>\} $, is said to be "linearly independent" if 
+
+\[ \sum_{i=1}^{N} \alpha_i\ket{a_i} = 0 \Longleftrightarrow \alpha_i = 0 \] 
+
+\noindent for $i$'s.
+
+Otherwise the set of vector ${\ket{a_i}} $ is said to be "linearly dependent" because at least one of the $\ket{a_i}$'s can be written as a linear combination of some or all of the other $\ket{a_i}$'s.
+
+    
+\subsubsection{Vector Space Basis Set}
+
+A set of $n$ linearly independent vectors $\{\ket{e_i}\}$ specifies a vector space $V^n$ and is called a 'set of basis vectors for the space $V^n$. Any $\ket{x}$ in $V^n$ can be written as a unique linear combination of the basis vectors: \[ \ket{x}=\Sigma_{i=1}^n \ket{e_i} \]
+
+\subsubsection{Vector Adjoint}
+
+For any given $\ket{a}$ in $V^n$, there is an 'adjoint vector' $\bra{a}$ such that:
+
+\[  \bra{a}=(\ket{a})^\dagger=\left(\begin{matrix} a_1 \\ \vdots \\ a_n \end{matrix}\right)^\dagger = \left(\begin{matrix} a_1^* \\ \vdots \\ a_n^* \end{matrix}\right)^T = \begin{pmatrix} a_1\ \dots \ a_n^ \end{pmatrix}^* = \begin{pmatrix} a_1^*\ \dots \ a_n^* \end{pmatrix}.\]
+
+\noindent $a_n^*$ denotes the complex conjugate of $a_n$ and therefore, $^\dagger$ is the complex conjugate transpose operator.
+
+For a scalar $k$ in $\BbbC$:
+
+\[ (k\ket{a})^\dagger=k^*\bra{a}\].
+
+
+
+\subsubsection{Inner Products}
+
+An inner product is an extension of the scalar product. For two vectors in $V^n$, $\ket{a}$ with complex components $\alpha_i$ and $\ket{b}$ with complex components $\beta_i$, the inner product is defined as:
+
+\[ \bra{a}\ket{b}=\sum_{i=1}^n  \alpha_i^* \beta_i .  \]
+
+For vectors $\ket{a}$, $\ket{b}$ and $\ket{c}$ all in $V^N$ specified by the basis $\{\ket{e_i}\}$ and scalars $k$ and $q$ in $\Bbb{C}$, the inner product possesses the following properties:
+
+\begin{enumerate}
+    \item $\bra{a}\ket{b}=\bra{b}\ket{a}^*$ (Non-commutivity relation).
+    \item $k \bra{a} \ket{b} = \bra{a} k \ket{b} = \bra{a} \ket{b} k$ (scalar multiplicity associativity).
+    \item $\bra{a}(\ket{b}+\ket{c})=\bra{a}\ket{b}+\bra{a}\ket{c}$ (Left vector distributivity).
+    \item $(\bra{a}+\bra{b})\ket{c} = \bra{a}\ket{c}+\bra{b}\ket{c}$ (Right vector distributivity).
+    \item $\bra{a}\ket{b}=0$ (orthogonal vectors).
+    \item $\bra{a}\ket{a}^{1/2}$ (Norm of $\ket{a}$).
+    \item $<e_i|e_j>=\delta_{ij}$ (orthonormality condition).
+\end{enumerate}
+
+
+
+\subsubsection{Properties of Hermitian Operators}
+\begin{itemize}
+    \item If $A = A^{\dagger}$, $A$ is \textbf{Hermitian}
+    \item If $-A = A^{\dagger}$, $A$ is \textbf{Anti-Hermitian}
+    \item $\bra{x^i}A\ket{x^i} = \lambda_i\bra{x^i}\ket{x^i}$
+    \item $A\ket{x^i} = \lambda_i\ket{x^i}$
+    \item $(AB)^{\dagger} = B^{\dagger}A^{\dagger} = BA$ (if A, B are Hermitian)
+    \item Eigenvalues of Hermitian operators ($\lambda_i$) are all real
+    \item Eigenvectors of Hermitian operators corresponding to distinct eigenvalues are orthogonal (assumes no degeneracy)
+\end{itemize}
+
+\subsubsection{Commutators}
+For three linear operators $S$, $U$, and $T$
+\begin{itemize}
+    \item $[U,T] = UT - TU$
+    \item $[U,T] = -[T,U]$
+    \item $[\alpha{U}, \beta{T}] = \alpha\beta[U,T]$
+    \item $[S+T, U] = [S,U] + [T,U]$
+    \item $[S,TU] = [S,T]U + T[S,U]$
+    \item $[ST,U] = S[T,U] + [S,U]T$
+    \item \textbf{Jacobi Identity}: $[[S,T], U] + [[U,S],T] + [[T,U],S] = 0$
+    \item $[T,T] = 0$
+    \item $[T,1] = 0$
+    \item $[T,T^{-1}] = 0$
+    \item $[T,T^m] = 0$ when $m=0,±1,±2,...$
+\end{itemize}
+
+\subsection{Spectral decomposition and diagonalization}
+A non zero vector $\textbf{v}$ of dimension N is an eigenvector of a square N × N matrix A if it satisfies the linear equation $A\textbf{v}=\lambda \textbf{v}$. $\lambda$ is the eigenvalue.
+\begin{itemize}
+    \item The characteristic equation: det$(\textbf{A}-\lambda \textbf{I})=0$
+\end{itemize}
+\subsubsection{Gram-Schmidt Process}
+Convert a basis into an orthonormal basis:
+Say $|a_i>$ is a starting orthonormal basis. Where $i=1,2,3,.....N$. First define: $|e_1>= \frac{<|a_i>}{<a_i|a_i>^{1/2}}$. So, $<e_1|e_1>=1$
+\begin{enumerate}
+   
+    \item Next, $<e_2^{'}=|a_2>-(<e_1|e_1>)|e_1>$. But $|e_2^{'}>$ is orthogonal to $|e_1>$ i.e $<e_1|e_2^{'}>=0$
+    \item Then, the normalized $|e_2>= \frac{|e_2^{'}>}{<|e_2^{'}|e_2^{'}>}$ 
+    \item  $<e_3^{'}=|a_3>-(<e_1|a_3>)|e_1>-(<e_2|a_3>)|e_2>-(<e_2|a_3>)|e_2>$
+    \item Therefore the normalized $|e_3>= \frac{|e_3^{'}>}{<|e_3^{'}|e_3^{'}>}$
+    \item $|e_N^{'}>=|a_N>-(<e_1|a_N>)|e_1>-....----(<e_{N-1}|a_N>)|e_{N-1}>$
+    \item Finally, $|e_N>= \frac{|e_N^{'}>}{<|e_N^{'}|e_N^{'}>}$ will be the required orthonormal basis by G.S 
+    
+\end{enumerate}
+
+\subsubsection{Change of Basis by Diagonalization}
+When $S$ is the matrix of the eigenvectors of A, 
+
+$A' = S^{-1} A S$
+
+S is \emph{unitary}, so $S^{\dagger}S = 1$ and $S^{\dagger} = S^{-1}$
+
+and 
+
+$A' = S^{\dagger}AS$
+
+\subsection{Fourier Series and Transforms}
+A function which satisfies Dirichlet's conditions can be expanded in a Fourier (or trigonometric) series. 
+
+\subsubsection{Dirichlet Conditions}
+The function $f(x)$: 
+\begin{enumerate}
+    \item is periodic in $[-\pi, \pi]$, single-valued
+    \item has a finite member of discontinuities
+    \item has a finite number of minima and maxima
+    \item is absolutely integrable
+\end{enumerate}
+
+Any function which satisfies these can be expanded in a Fourier (or trigonometric) series
+
+\subsubsection{Fourier Series of Period L}
+Period of $2\pi$ is not required (even based on Dirichlet (1)). When the period is $L$, 
+
+\begin{equation}
+    f(x) = \frac{1}{\sqrt{L}}\sum^{+\infty}_{n=-\infty}{C_n e^{i\frac{2n\pi}{L}x}}
+\end{equation}
+
+This gives us the "more popular" way to expand function $f(x)$: 
+
+\begin{equation}
+    f(x) = \frac{A_0}{2} + \sum^{\infty}_{n=1}{\bigg{[}A_n \cos{\bigg{(}\frac{2n\pi}{L}x}\bigg{)} + B_{n}\sin{\bigg{(}\frac{2n\pi}{L}x\bigg{)}}\bigg{]}}
+\end{equation}    
+
+
+\begin{equation}
+\label{fourier_An}
+    A_n = \frac{C_n + C_{-n}}{\sqrt{L}} = \frac{2}{L}\int_0^L{f(x)\cos{\Big{(}\frac{2n\pi}{L}x\Big{)}}dx}
+\end{equation}
+\begin{equation}
+\label{fourier_Bn}
+    B_n = \frac{i(C_n + C_{-n})}{\sqrt{L}} = \frac{2}{L}\int_0^L{f(x)\sin{\Big{(}\frac{2n\pi}{L}x\Big{)}}dx}
+\end{equation}
+
+\subsubsection{Parseval's Identity}
+
+Parseval's identity relates the \emph{average value} of $\big[f(x)\big]^2$ over a period to the Fourier coefficients. It can also be written in terms of the coefficients $C_n$ of the complex forms using Eqns. \ref{fourier_An} and \ref{fourier_Bn}.
+
+\begin{equation}
+    \frac{1}{L}\int_0^L{\big[f(x)\big]^2 dx} = \Big(\frac{A_0}{2}\Big)^2 * \frac{1}{2}\sum_{n=1}^{\infty}{\Big(A_n^2 + B_n^2\Big)}
+\end{equation}
+
+We can use this to find the sum of series. 
+
+\subsubsection{Fourier Transforms}
+
+The Fourier transform $g(k)$ of a function $f(x)$ is found by:
+
+\begin{equation}
+    \label{fourier_xform}
+    g(k) = \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty}{f(x) e^{-ikx}dx}
+\end{equation}
+
+Where $\frac{1}{\sqrt{2\pi}}$ is the correction factor due to the distance formula. 
+
+
+The inverse Fourier transform $f(x)$ of a Fourier transform $g(k)$ is found by:
+
+\begin{equation}
+    \label{fourier_inv_xform}
+    f(x) = \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty}{g(k) e^{ikx} dk}
+\end{equation}
+
+Remember that the function $f(x)$ and the Fourier transform $g(k)$ should normalize to the same value: 
+
+\begin{equation}
+    \label{fourier_xform_normalized}
+    \int_{-\infty}^{\infty}{|f(x)|^2dx} = \int_{-\infty}^{\infty}{|g(k)|^2dk}
+\end{equation}
+
+\subsubsection{Fourier Sine/Cosine Transforms}
+
+\begin{equation}
+    \label{fourier_xform_sin}
+    \begin{cases}
+        f(x) = \sqrt{\frac{2}{\pi}}\int_0^{\infty}{g(k)sin(kx)dk}\\
+        g(k) = \sqrt{\frac{2}{\pi}}\int_0^{\infty}{f(x)sin(kx)dx}
+    \end{cases}
+\end{equation}
+
+
+\begin{equation}
+    \label{fourier_xform_cos}
+    \begin{cases}
+        f(x) = \sqrt{\frac{2}{\pi}}\int_0^{\infty}{g(k)cos(kx)dk}\\
+        g(k) = \sqrt{\frac{2}{\pi}}\int_0^{\infty}{f(x)cos(kx)dx}
+    \end{cases}
+\end{equation}
+
+\subsection{Functions of Complex Variables}
+The function $f(z)= x+iy$: 
+\begin{enumerate}
+    \item $f(z)=e^z=e^{x+iy}=e^{x}e^{iy}= e^x(\cos{y}+i\sin
+    y)$
+    \item Derivatives: $f'(z)= \lim_{\Delta z\to 0} \frac{f(z+\Delta z)-f(z)}{\Delta z}$
+ \end{enumerate}
+
+
+\subsection{Calculus of Residues}
+
+\subsection{Cauchy Riemann's theorem}
+\subsubsection{Cauchy's Riemann's Relations}
+For function $f(x,y)=f(z)= U(x,y)+ iV(x,y)$: 
+\begin{enumerate}
+  \item Derivatives: $f'(z)= \lim_{\Delta x\to 0} \frac{U(x+\Delta x, y)-U(x,y)}{\Delta x} + i\frac{V(x+\Delta x, y)-V(x,y)}{\Delta x}= \pdv{U(x,y)}{x}+i\pdv{V(x,y)}{x}$
+   \item Derivatives: $f'(z)= \lim_{\Delta y\to 0} \frac{U(x, y+\Delta y)-U(x,y)}{i\Delta y} + i\frac{V(x, y+\Delta y)-V(x,y)}{i\Delta y}= i\pdv{U(x,y)}{y}+i\pdv{V(x,y)}{y}$
+   \item The summary of Cauchy's Riemann's Relations \[
+ \boxed{\pdv{U}{x}=\pdv{V}{y} ;\pdv{V}{x}=-\pdv{U}{y} } 
+ \]
+ 
+\subsubsection{Cauchy's Riemann's Integrals}
+\end{enumerate}
+
+\subsubsection{Jordan's Lemma}
+
+\subsection{Partial Differential Equations of Physics}
+\subsubsection{General solutions}
+\subsubsection{Boundary-value problems}
+
+\subsection{Expansion in terms of eigenfunctions}
+think Legendre polynomials or Fourier series or Bessel functions
+
+\end{document}
